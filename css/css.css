@@ -1,0 +1,216 @@
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input, select, textarea, figure
+{
+    margin: 0;
+}
+.page-topbar {
+    line-height: 32px;
+    text-align: right;
+    position: relative;
+    z-index: 10;
+
+}
+.page-topbar a{
+    margin:0 3px;color: gray;text-decoration: none;font-size: 14px;
+}
+.inner-wrap {
+    width: 1225px;
+    margin: 0 auto;
+}
+.page-header .inner-wrap {
+    margin: -20px auto 15px auto;
+    overflow: hidden;
+    position: relative;
+}
+.page-header .logo {
+    text-align: center;
+    padding-bottom: 60px;
+}
+.page-header .logo a{
+    color: #555;
+}
+.page-header .logo a img {
+    border: 0 none;
+}
+.header-ser {
+    position: absolute;
+    right: 0;
+    top: 38px;
+}
+.searchbar {
+    margin-top: 10px;
+    border: 1px solid #aaa;
+}
+form{display: block}
+.searchbar .x-input {
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border: none;
+    padding-top:1px;
+}
+.searchbar .btn-search {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: url("../img/search.png") no-repeat center center;
+    font-size: 0;
+    border: none;
+}
+.nav-menu {
+    text-align: center;
+    height: 65px;
+    line-height: 40px;
+    background-color: #000;
+}
+ul, ol, menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu .menu-item {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    _zoom: 1;
+}
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.nav-menu .menu-item {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    _zoom: 1;
+   margin-top: 15px;
+}
+.nav-menu .menu-item a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+
+#igs {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.ig {
+    position: absolute;
+}
+
+#tabs {
+    position: absolute;
+    list-style: none;
+    background-color:#ffffff;
+    left: 50%;
+    bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 0 5px 5px;
+}
+
+/*.tab{*/
+    /*float: left;*/
+    /*text-align: center;*/
+    /*line-height: 20px;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*cursor: pointer;*/
+    /*overflow: hidden;*/
+    /*margin-right: 4px;*/
+    /*border-radius: 100%;*/
+    /*background-color:gray;*/
+/*}*/
+
+.page-helper {
+    background-color: #e8e8e8;
+}
+.page-helper .inner-wrap {
+    padding: 20px 0;
+    width: 1393px;
+}
+.foot-logo {
+    margin-left: 125px;
+    border-right: 1px solid #999;
+    padding-right: 50px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+.foot-logo, .attention, .store-link, .attention dt, .attention dd a, .attention dd, .store-link a, .clear .tel {
+    float: left;
+}
+div.foot-logo a{
+    color: #555;
+    text-decoration: none;
+    cursor: auto;
+}
+div.foot-logo{
+    float:left; margin-top: 70px;
+}
+div.foot-logo a img{
+    border: 0 none;
+    padding-left: 160px;
+}
+.attention {
+    border-right: 1px solid #999;
+    padding: 0 46px;
+    height: 130px;
+    border: none;
+    margin-top: 45px;
+}
+.attention dt {
+    margin-top: 25px;
+    font-size: 16px;
+}
+dt {
+    display: block;
+}
+div{display: block}
+.attention dd a span, .store-link a span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.attention dd a, .store-link a {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+    padding: 30px;
+}
+.page-header .inner-wrap {
+    margin: -10px auto 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.clear {
+    clear: both;
+    padding: 0 125px;
+    border-top: 1px solid #999;
+    width: 1000px;height: 60px;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.topbar-right, .header-right, .nav-right, .slider .next, .page-container .section-right, .page-container .aside, .integ-coupon .need-integ, .follow-weibo .add-weibo-btn, .right-ad, .clear .copyright {
+    float: right;
+    _display: inline;
+}
+.clear span{
+    font-size: 14px;
+    color: #000;
+    margin-top: 20px;
+}
+.bread-crumbs {
+    margin: 10px 0;
+    line-height: 2;
+    font-size: 14px;
+}

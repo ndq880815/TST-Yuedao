@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>web网站</title>
+</head>
+<link rel="stylesheet" href="css/css.css">
+<body>
+        <div id="topbar" class="page-topbar">
+                <div class="inner-wrap">
+                    <a href="http://www.tinsecret.com/article-zhuanguixiangqing-110.html">
+                        专柜查询
+                    </a>
+                    |
+                    <a href="#">电子商城</a>
+                </div>
+        </div>
+        <div id="header" class="page-header">
+            <div class="inner-wrap">
+                <div class="logo">
+                    <a href="webindex.html">
+                        <img src="img/logo-TST.png">
+                    </a>
+                </div>
+                <!--<div class="header-ser">-->
+                    <!--<div class="searchbar">-->
+                        <!--<form action="/search-result.html" method="post" id="search_220" async="false">-->
+                            <!--<input class="x-input" type="text" name="search_keywords" id="dom_el">-->
+                            <!--<button type="submit" class="btn btn-search">搜索</button>-->
+                        <!--</form>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+
+        <div class="nav-menu">
+            <div class="inner-wrap">
+                <ul class="clearfix">
+                    <li class="menu-item">
+                        <a href="webindex.html">首页</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="newmessage.html">最新资讯</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="brandStroy.html">品牌简介</a>
+                    </li>
+                    <li class="menu-item" id="product">
+                        <a href="product.html">明星产品</a>
+
+                    </li>
+                    <li class="menu-item">
+                        <a href="wait.html">020产品</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div id="igs">
+                <a class="ig" href="#"><img src="img/bg5.jpg"/></a>
+                <a class="ig" href="#"><img src="img/bg1.jpg"/></a>
+                <a class="ig" href="#"><img src="img/bg2.jpg"/></a>
+                <a class="ig" href="#"><img src="img/bg3.jpg"/></a>
+                <a class="ig" href="#"><img src="img/bg4.jpg"/></a>
+
+                <!--<ul id="tabs">-->
+                    <!--<li class="tab"></li>-->
+                    <!--<li class="tab"></li>-->
+                    <!--<li class="tab"></li>-->
+                    <!--<li class="tab"></li>-->
+                    <!--<li class="tab"></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            </div>
+        </div>
+        <div id="helper" class="page-header">
+            <div class="inner-wrap">
+                    <div class="foot-logo">
+                        <a href="webindex.html">
+                            <img src="img/logo-TST.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="attention">
+                    <dl class="clearfix">
+                        <dt>关注我们:</dt>
+                        <dd>
+                            <a href="http://weibo.com/login.php" class="wb">
+                            <span>
+                                <img src="img/wb-ic.jpg">
+                            </span>
+                                TST庭秘密
+                                <br>
+                                官方微博
+                            </a>
+                            <a href="http://www.tinsecret.com/article-guanfangdianzishangcheng-122.html" target="_blank" class="wx">
+                            <span>
+                                <img src="img/wx-ic.jpg">
+                            </span>
+                                TST庭秘密
+                                <br>
+                                官方微信订阅号
+                            </a>
+                            <a href="http://www.tinsecret.com/article-guanfangdianzishangcheng-122.html" target="_blank" class="wx">
+                            <span>
+                                <img src="img/wx-ic%20(1).jpg">
+                            </span>
+                                TST庭秘密
+                                <br>
+                                官方微信号
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                    <div class="store-link"></div>
+            </div>
+        </div>
+
+        <div class="clear">
+            <span class="tel">官方服务热线：400-990-5599（9:00-22:00）</span>
+            <span class="copyright">沪ICP备31010802001066号</span>
+        </div>
+
+        <script src="js/jquery-1.11.3.js"></script>
+        <script type="text/javascript">
+            var i = 0 ;
+            var timer;
+
+            $(document).ready(function(){
+                //用jquery方法设置第一张图片显示，其余隐藏
+                $('.ig').eq(0).show().siblings('.ig').hide();
+
+                //调用showTime()函数（轮播函数）
+                showTime();
+
+                //当鼠标经过下面的数字时，触发两个事件（鼠标悬停和鼠标离开）
+                $('.tab').hover(function(){
+                    //获取当前i的值，并显示，同时还要清除定时器
+                    i = $(this).index();
+                    Show();
+                    clearInterval(timer);
+                },function(){
+                    //
+                    showTime();
+                });
+
+
+            });
+
+
+            //创建一个showTime函数
+            function showTime(){
+                //定时器
+                timer = setInterval(function(){
+                    //调用一个Show()函数
+                    Show();
+                    i++;
+                    //当图片是最后一张的后面时，设置图片为第一张
+                    if(i==5){
+                        i=0;
+                    }
+                },2000);
+            }
+
+
+            //创建一个Show函数
+            function Show(){
+                //在这里可以用其他jquery的动画
+                $('.ig').eq(i).fadeIn(300).siblings('.ig').fadeOut(300);
+
+                //给.tab创建一个新的Class为其添加一个新的样式，并且要在css代码中设置该样式
+                $('.tab').eq(i).addClass('bg').siblings('.tab').removeClass('bg');
+
+                /*
+                 * css中添加的代码：
+                 * .bg{ background-color: #f00; }
+                 * */
+            }
+            $(window).ready(function () {
+                $(".menu-item a").on("mouseover",function () {
+                    $(this).css("color","red");
+                    $(".menu-item a").on("mouseout",function () {
+                        $(this).css("color","#fff")
+                    })
+                })
+            })
+        </script>
+
+</body>
+</html>
