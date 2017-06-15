@@ -13,7 +13,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input,
     margin:0 3px;color: gray;text-decoration: none;font-size: 14px;
 }
 .inner-wrap {
-    width: 1225px;
+    width: 1250px;
     margin: 0 auto;
 }
 .page-header .inner-wrap {
@@ -22,8 +22,13 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input,
     position: relative;
 }
 .page-header .logo {
+    margin-top: 20px;
     text-align: center;
     padding-bottom: 60px;
+    font-size: 28px;
+    color: #000000;
+    font-weight: 200;
+    font-family: "Calibri Light";
 }
 .page-header .logo a{
     color: #555;
@@ -74,7 +79,6 @@ ul, ol, menu {
     display: inline-block;
     _zoom: 1;
 }
-user agent stylesheet
 li {
     display: list-item;
     text-align: -webkit-match-parent;
@@ -143,7 +147,7 @@ li {
     height: 130px;
     margin-bottom: 15px;
 }
-.foot-logo, .attention, .store-link, .attention dt, .attention dd a, .attention dd, .store-link a, .clear .tel {
+.foot-logo, .attention, .store-link, .attention dt, .attention dd a, .attention dd, .store-link a,.tel {
     float: left;
 }
 div.foot-logo a{
@@ -161,9 +165,8 @@ div.foot-logo a img{
 .attention {
     border-right: 1px solid #999;
     padding: 0 46px;
-    height: 130px;
+    height: 350px;
     border: none;
-    margin-top: 45px;
 }
 .attention dt {
     margin-top: 25px;
@@ -184,9 +187,10 @@ div{display: block}
     text-decoration: none;
     color: #000000;
     padding: 30px;
+    margin-top: 80px;
 }
 .page-header .inner-wrap {
-    margin: -10px auto 0 auto;
+    margin:50px auto 0 auto;
     overflow: hidden;
     position: relative;
 
@@ -199,8 +203,11 @@ div{display: block}
     margin: 0 auto;
     padding-top: 10px;
     overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+
 }
-.topbar-right, .header-right, .nav-right, .slider .next, .page-container .section-right, .page-container .aside, .integ-coupon .need-integ, .follow-weibo .add-weibo-btn, .right-ad, .clear .copyright {
+.topbar-right, .header-right, .nav-right, .slider .next, .page-container .section-right, .page-container .aside, .integ-coupon .need-integ, .follow-weibo .add-weibo-btn, .right-ad {
     float: right;
     _display: inline;
 }
@@ -208,9 +215,17 @@ div{display: block}
     font-size: 14px;
     color: #000;
     margin-top: 20px;
+    text-align: center;
 }
 .bread-crumbs {
     margin: 10px 0;
     line-height: 2;
     font-size: 14px;
+}
+.store-link{
+    border-left: 1px solid #555555;
+    height: 300px;
+    color: #555555;
+    font-size: 18px;
+    margin-top: 25px;
 }
