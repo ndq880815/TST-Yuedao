@@ -187,12 +187,13 @@ div{display: block}
     text-decoration: none;
     color: #000000;
     padding: 30px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .page-header .inner-wrap {
-    margin:50px auto 0 auto;
+    margin:0 auto 0 auto;
     overflow: hidden;
     position: relative;
+    height: 280px;
 
 }
 .clear {
@@ -224,8 +225,14 @@ div{display: block}
 }
 .store-link{
     border-left: 1px solid #555555;
-    height: 300px;
     color: #555555;
     font-size: 18px;
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-left: 160px;
+}
+.inner-header{
+    margin: 40px auto;
+}
+.main{
+    height: 550px;
 }
